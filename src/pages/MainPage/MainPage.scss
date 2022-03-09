@@ -1,0 +1,12 @@
+.main_page_container {
+    overflow-x: hidden;
+
+    .main_content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer_wrapper {
+        margin-top: 10px;
+    }
+}

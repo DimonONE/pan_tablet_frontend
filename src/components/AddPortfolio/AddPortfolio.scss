@@ -1,0 +1,171 @@
+/** @format */
+
+.add_portfolio_card.hide_portfolio_card {
+  .content {
+    height: 0;
+    margin-bottom: 0;
+
+    .registration_wrapper {
+      height: 0;
+    }
+  }
+  .header {
+    &::before {
+      transform: rotateZ(225deg);
+    }
+  }
+}
+
+.add_portfolio_card {
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  background-color: white;
+  transition: 0.3s;
+  max-width: 270px;
+  width: 100%;
+  transition: 0.2s;
+  background: white;
+  z-index: 2;
+  border-left: 1px solid rgb(192, 192, 192);
+  border-right: 1px solid rgb(192, 192, 192);
+
+  .header {
+    background-color: #13a6ec;
+    color: #fff;
+    font-size: 15px;
+    padding: 40px 15px 15px;
+    text-align: center;
+    height: 23px;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &::before {
+      content: " ";
+      width: 10px;
+      height: 10px;
+      transform: rotateZ(45deg);
+      border-top: 2px solid #0f7bae;
+      border-left: 2px solid #0f7bae;
+      transition: 200ms all ease-in-out;
+      position: absolute;
+      top: 20px;
+      left: calc(50% - 4px);
+    }
+    &:hover {
+      background-color: #158ec7;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: min-content;
+    margin-bottom: 15px;
+    transition: 0.3s;
+
+    .registration_wrapper {
+      max-width: 100%;
+      padding: unset;
+      margin: 0;
+
+      .error {
+        font-size: 10px;
+      }
+      .registration_header {
+        display: block;
+        margin: 14px auto;
+        font-size: 18px;
+        color: #0c5171;
+        font-weight: 700;
+      }
+      form {
+        .registration_text,
+        .account_name_container label,
+        .age_email_container label,
+        .pwds_container label {
+          display: none;
+        }
+        input {
+          border: 1px solid #0f88c1;
+          font-size: 13px;
+          padding: 4px 15px;
+          width: 86%;
+          border-radius: 2px;
+          outline: none;
+          font-family: "Roboto Slab", serif;
+        }
+        .account_name_container,
+        .age_email_container,
+        .pwds_container {
+          max-width: 230px;
+        }
+        .age_email_container,
+        .pwds_container {
+          margin-top: 5px;
+          input {
+            max-width: 81px;
+          }
+        }
+        .type {
+          margin: 5px auto 0;
+          text-align: left;
+          max-width: 230px;
+
+          span,
+          div {
+            margin: 0 auto;
+            font-weight: 300;
+            font-size: 11px;
+            color: #444;
+            flex-direction: column;
+            align-items: baseline;
+          }
+        }
+        .send {
+          margin: 15px auto 5px;
+          max-width: unset;
+        }
+        .save_data,
+        .delete_account {
+          display: none;
+        }
+      }
+    }
+    span {
+      margin: 15px auto;
+      color: #0c5171;
+      font-size: 18px;
+      font-weight: 700;
+      max-width: 180px;
+    }
+    button {
+      font-family: "Roboto Slab", serif;
+      transition: 0.2s;
+      border-radius: 2px;
+      padding: 0 15px;
+      line-height: 38px;
+      border: 1px solid #0f88c1;
+      width: 63%;
+      margin: 10px auto;
+      background-color: #13a6ec;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0f88c1;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .add_portfolio_card {
+    display: none;
+  }
+}

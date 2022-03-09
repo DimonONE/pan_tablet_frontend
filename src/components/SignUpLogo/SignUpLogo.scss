@@ -1,0 +1,13 @@
+.content_wrapper {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    padding: 0 10px;
+
+    .logo {
+        width: 210px;
+        height: 66px;
+    }
+}

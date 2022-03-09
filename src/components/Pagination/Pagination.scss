@@ -1,0 +1,28 @@
+.pages {
+    cursor: pointer;
+    display: flex;
+
+    li {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 38px;
+        }
+    }
+    li.previous,
+    li.next {
+        display: none;
+    }
+    .active {
+        background: #3da6ec;
+        border-radius: 3px;
+        color: white;
+    }
+}

@@ -1,0 +1,152 @@
+.competition_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .competition_section {
+        background: #13a6ec;
+        color: #fff;
+        margin: 40px 0 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+
+        .content {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            border-right: 1px solid #fff;
+            max-width: 550px;
+            width: 100%;
+
+            .competition_img {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 15px;
+
+                img {
+                    max-height: 35px;
+                    margin: 10px auto;
+                }
+                a {
+                    padding: 3px 50px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    background: #fff;
+                    border-radius: 2px;
+                    color: #0c5171;
+                    border: 0;
+                    outline: none;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    text-align: center;
+
+                    &:hover {
+                        opacity: 0.8;
+                        transition: 0.2s;
+                    }
+                }
+            }
+            .timer_container {
+                width: 270px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0;
+
+                .remaining {
+                    max-width: 140px;
+                    font-size: 13px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .rating {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+
+            .cup_img {
+                max-width: 90px;
+                max-height: 90px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .join_rating {
+                font-size: 25px;
+                font-weight: 700;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+
+                div {
+                    padding: 5px 0;
+                }
+                a {
+                    font-family: "Roboto Slab", serif;
+                    border: none;
+                    outline: none;
+                    color: #0c5171;
+                    padding: 3px 0;
+                    font-size: 15px;
+                    font-weight: 700;
+                    background: #fff;
+                    border-radius: 2px;
+                    max-width: 200px;
+                    width: 100%;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    text-transform: none;
+
+                    &:hover {
+                        opacity: 0.8;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .competition_container {
+        .competition_section {
+            flex-direction: column;
+            padding: 0;
+
+            .content {
+
+                max-width: none;
+                margin-bottom: 10px;
+                border-right: none;
+                border-bottom: 1px solid #fff;
+                padding: 20px 0;
+            }
+            .rating {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 430px) {
+    .competition_container {
+        .competition_section {
+            .rating {
+                .join_rating {
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+}

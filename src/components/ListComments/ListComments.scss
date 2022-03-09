@@ -1,0 +1,30 @@
+.comments {
+  color: #444;
+  overflow-y: auto;
+  height: 170px;
+  max-width: 190px;
+  font-size: 13px;
+  margin-left: 45px;
+  padding-right: 15px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    list-style: none;
+    padding: 0;
+
+    li {
+      line-height: 1.5;
+      margin-left: 12%;
+      .text {
+        width: 200px;
+        word-break: break-word;
+      }
+
+      .date_author {
+        font-weight: 800;
+      }
+    }
+  }
+}

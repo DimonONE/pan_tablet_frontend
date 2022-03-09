@@ -1,0 +1,14 @@
+.img_viewer {
+  img,
+  video, div {
+    position: relative;
+    width: 165px;
+    height: 150px;
+
+    
+  }
+  div {
+    width: unset !important;
+    height: unset !important;
+  }
+}

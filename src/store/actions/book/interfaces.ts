@@ -1,0 +1,6 @@
+export enum bookActionsTypes {
+    LOADING_BOOK = 'LOADING_BOOK',
+    LOADED_BOOK = 'LOADED_BOOK',
+    LOADING_BOOK_FAILED = 'LOADING_BOOK_FAILED',
+    LOADED_IDS = "LOADED_IDS",
+};

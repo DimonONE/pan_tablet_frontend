@@ -1,0 +1,105 @@
+.login_box {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    font-size: 11px;
+    animation-name: show;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.5;
+    }
+    .login_popup {
+        box-sizing: border-box;
+        width: 300px;
+        max-width: 100%;
+        position: relative;
+        background: #fff;
+        border-radius: 3px;
+        padding: 20px;
+
+        .head {
+            box-sizing: border-box;
+            img {
+                position: absolute;
+                top: 3px;
+                right: 3px;
+                width: 12px;
+                height: 12px;
+                cursor: pointer;
+            }
+        }
+        form {
+            input {
+                box-sizing: border-box;
+                margin-top: 5px;
+                border: 1px solid #ababab;
+                padding: 5px;
+                font-family: "Roboto Slab", serif;
+                -webkit-appearance: none;
+                margin-bottom: 5px;
+                width: 100%;
+                font-size: 15px;
+                font-weight: 300;
+            }
+            .btn_login {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 10px 20px;
+                background-color: #13a6ec;
+                border: 0;
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-appearance: none;
+                font-family: "Roboto Slab", serif;
+                font-weight: 700;
+                font-size: 11px;
+                cursor: pointer;
+
+                img {
+                    margin: -13px 0;
+                    width: 40px;
+                }
+            }
+            .error {
+                font-size: 11px;
+            }
+        }
+        .forgot_pwd {
+            text-align: center;
+            
+            span {
+                cursor: pointer;
+                color: #444;
+                font-weight: 300;
+                font-family: "Roboto Slab", serif;
+            }
+        }
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

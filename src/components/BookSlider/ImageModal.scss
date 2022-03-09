@@ -1,0 +1,26 @@
+.ReactModalPortal {
+  .ReactModal__Overlay.ReactModal__Overlay--after-open {
+    z-index: 2;
+  }
+}
+
+.ReactModal__Content--after-open {
+  background-color: transparent !important;
+  border: none !important;
+}
+.image_modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    padding: 5px 10px;
+    background-color: #13a6ec;
+    margin: 5% 0;
+    border-radius: 4px;
+    color: white;
+  }
+}
+.clickable:hover {
+  cursor: pointer;
+}

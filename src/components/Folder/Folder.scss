@@ -1,0 +1,33 @@
+.creating_folder,
+.folder {
+    button {
+        transition: 200ms all ease-in-out;
+        border-radius: 2px;
+        line-height: 40px;
+        width: 140px;
+        color: #fff;
+        font-family: "Roboto Slab", serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #0f88c1;
+        background-color: #13a6ec;
+
+        &:hover {
+            background-color: #0f88c1;
+        }
+    }
+}
+.folder {
+    border: 2px solid gray;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .folder_name {
+        max-width: 260px;
+    }
+}

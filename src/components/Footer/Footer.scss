@@ -1,0 +1,81 @@
+.footer_wrapper {
+    max-width: 1140px;
+    margin: 0 auto 98px;
+    display: flex;
+    flex-direction: column;
+
+    .header_2 {
+        padding-top: 20px;
+        margin: 0 10px;
+        border-top: 1px solid #aaaaaa;
+        color: #444;
+    }
+
+    .contact_wrapper {
+        max-width: 1140px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px 10px 0;
+        color: #444;
+
+        .contacts {
+            width: 285px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-right: 1px solid #aaaaaa;
+            margin: 0 30px 0 0;
+            font-size: 15px;
+            font-weight: 300;
+
+            div {
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+        .town_index {
+            font-size: 15px;
+            width: 533px;
+            font-weight: 700;
+
+            span + span {
+                font-weight: 300;
+            }
+        }
+        .copy_right {
+            font-weight: 300;
+            width: 270px;
+
+            a {
+                text-decoration: underline;
+                color: blue;
+            }
+        }
+    }
+}
+@media (max-width: 760px) {
+    .footer_wrapper {
+        .contact_wrapper {
+            display: block;
+
+            .contacts {
+                border: none;
+            }
+            .town_index {
+                margin: 20px 0;
+                width: unset;
+                max-width: 400px;
+            }
+        }
+    }
+}
+@media (max-width: 890px) {
+    .footer_wrapper {
+        .contact_wrapper {
+            .town_index {
+                max-width: 400px;
+            }
+        }
+    }
+}

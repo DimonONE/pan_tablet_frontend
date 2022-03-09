@@ -1,0 +1,48 @@
+.folder_page.container {
+    .folders_header {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 50px;
+        padding-right: 20px;
+    }
+    .full_width_page {
+        .folders {
+            max-width: 1000px;
+            max-height: 700px;
+
+            .folder {
+                padding: 20px;
+
+                .folder_name {
+                    max-width: 770px;
+                }
+            }
+        }
+        .creating_folder {
+            max-width: 1020px;
+
+            label {
+                font-size: 26px;
+            }
+            .folder_actions {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .loader {
+        max-width: 1020px;
+        margin: 30px auto 0;
+    }
+    .books {
+        width: 100%;
+        gap: 30px 35px;
+        max-width: 865px;
+        margin: 0 auto 50px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+    }
+}

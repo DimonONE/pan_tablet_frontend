@@ -1,0 +1,76 @@
+.top__books {
+  overflow-x: hidden;
+}
+.top_books {
+  position: relative;
+  margin-bottom: 50px;
+
+  .slider_bg {
+    position: absolute;
+    top: -80px;
+    left: -150px;
+    width: 570px;
+    z-index: -1;
+  }
+  img.right {
+    right: -220px;
+    left: unset;
+    top: -60px;
+  }
+  .header {
+    margin: 40px auto;
+    text-align: center;
+    background: #13a6ec;
+    color: white;
+    padding: 18px;
+    max-width: 890px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.7;
+    position: relative;
+    border-radius: 5px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: " ";
+      left: 100%;
+      top: 50%;
+      width: 1000px;
+      height: 3px;
+      background: #13a6ec;
+    }
+    &::before {
+      left: auto;
+      right: 100%;
+    }
+  }
+  .works_container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+
+    .works {
+      max-width: none;
+      width: 100%;
+      justify-content: center;
+      column-gap: 60px;
+    }
+  }
+  .left_hero,
+  .right_hero {
+    max-width: 200px;
+    z-index: -1;
+    position: fixed;
+    bottom: 40px;
+    left: 60px;
+  }
+  .right_hero {
+    left: unset;
+    right: 60px;
+  }
+  .pages {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,244 @@
+/** @format */
+.competiton_page {
+  overflow-x: hidden;
+}
+.winners {
+  position: relative;
+  margin-bottom: 50px;
+
+  .slider_bg {
+    position: absolute;
+    top: -148px;
+    left: -150px;
+    width: 570px;
+    z-index: -1;
+  }
+  img.right {
+    right: -220px;
+    left: unset;
+    top: -105px;
+  }
+  .awards_info {
+    margin: 40px auto;
+    text-align: center;
+    background: #13a6ec;
+    color: white;
+    padding: 18px;
+    max-width: 890px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.7;
+    position: relative;
+    border-radius: 5px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: " ";
+      left: 100%;
+      top: 50%;
+      width: 1000px;
+      height: 3px;
+      background: #13a6ec;
+    }
+    &::before {
+      left: auto;
+      right: 100%;
+    }
+    .awards {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      font-size: 25px;
+
+      .img_container {
+        max-width: 250px;
+
+        img {
+          width: 100%;
+          border: solid #5b5b5b 1px;
+          height: 140px;
+        }
+      }
+    }
+  }
+  .works_container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #13a6ec;
+    }
+
+    .works {
+      max-width: none;
+      width: 100%;
+      justify-content: center;
+      column-gap: 60px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      align-items: center;
+    }
+    .winner_books {
+      display: flex;
+      position: relative;
+      .number {
+        font-size: 18px;
+        position: absolute;
+        top: 30px;
+        left: -20px;
+      }
+    }
+  }
+  .left_hero,
+  .right_hero {
+    max-width: 200px;
+    z-index: -1;
+    position: absolute;
+    bottom: 10px;
+    left: -130px;
+  }
+  .right_hero {
+    left: unset;
+    right: -130px;
+  }
+
+  .awards-bottom-part {
+    display: flex;
+    justify-content: space-evenly;
+
+    .competition_img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 15px;
+
+      img {
+        max-height: 50px;
+        margin: 10px auto;
+      }
+      button {
+        padding: 3px 50px;
+        font-size: 15px;
+        font-weight: 700;
+        background: #fff;
+        border-radius: 2px;
+        color: #0c5171;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        transition: 0.2s;
+        text-align: center;
+
+        &:hover {
+          opacity: 0.8;
+          transition: 0.2s;
+        }
+      }
+    }
+    .timer_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+      width: 50%;
+
+      .remaining {
+        max-width: 140px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.competition_pagination {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1410px) {
+  .winners,
+  .top_books {
+    .left_hero,
+    .right_hero {
+      max-width: 150px;
+      left: -55px;
+    }
+    .right_hero {
+      left: unset;
+      right: -55px;
+    }
+  }
+  .awards-bottom-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1450px) {
+  .winners,
+  .top_books {
+    .left_hero,
+    .right_hero {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .winners {
+    img.slider_bg {
+      width: 500px;
+    }
+    img.right {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .winners {
+    img.slider_bg {
+      width: 500px;
+    }
+    img.right {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .winners,
+  .top_books {
+    .awards_info,
+    .header {
+      &::after,
+      &::before {
+        position: unset !important;
+      }
+
+      .awards {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img_container {
+          img {
+            height: 115px;
+          }
+        }
+      }
+
+      .competitionBooks_container .work_contentCompetition {
+        margin: 0 10%;
+      }
+    }
+  }
+}
